@@ -1,14 +1,21 @@
 <template>
-  <PadreNumeros/>
+  <div>
+    <h1>hOLA</h1>
+    <MenuComponent/>
+    <MenuAleatorio/>
+
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import PadreNumeros from './components/PadreNumeros.vue'
+import MenuComponent from './components/MenuComponent.vue'
+import MenuAleatorio from './components/MenuAleatorio.vue'
 
 export default {
   name: 'App',
   components: {
-    PadreNumeros
+    MenuComponent, MenuAleatorio
   }
 }
 </script>
